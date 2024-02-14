@@ -6,6 +6,7 @@ function MainPage(){
             <h1>Main page text</h1>
 
             <button class="btn btn-dark">hewwo</button>
+            <img src="/cat.gif"></img>
             
         </div>
     );
