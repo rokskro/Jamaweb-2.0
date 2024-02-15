@@ -10,12 +10,13 @@ import Navbar from './components/Navbar';
 function App() {
   return (
       <BrowserRouter>
+      <Navbar />
         <Routes>
-          <Route path="/" element={<Layout />}>
+          
             <Route index element={<MainPage />} />           
             <Route path="Products" element={<Products />} />           
             <Route path="Orders" element={<Orders />} />                  
-          </Route>   
+           
         </Routes>
       </BrowserRouter>
   );

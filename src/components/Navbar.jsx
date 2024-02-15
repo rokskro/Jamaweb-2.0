@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom"; 
 import '../css/Navbar.css';
 
-function Navbar() {
+export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -38,5 +38,3 @@ function Navbar() {
         </nav>
     );
 } 
-
-export default Navbar;
