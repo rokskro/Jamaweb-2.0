@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react"; 
-import { Link } from "react-router-dom"; 
+import React from "react";
+import { Link } from "react-router-dom";
 import '../css/Navbar.css';
-
+ 
 export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -17,6 +17,9 @@ export default function Navbar() {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
                           <Link className="nav-link" to="/">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/Login">Login</Link>
                         </li>
                         <li className="nav-item">
                           <Link className="nav-link" to="/Products">Products</Link>
@@ -38,4 +41,4 @@ export default function Navbar() {
             </div>
         </nav>
     );
-} 
+}
