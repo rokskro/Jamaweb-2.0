@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/QuadContainer.css';
 import HomeCard from './HomeCard';
 import ImageContainer from '../components/ImageContainer';
+import DealContainer from '../components/DealContainer';
 
 export default function QuadContainer(){
     return(
@@ -9,7 +10,7 @@ export default function QuadContainer(){
                 <hr className="clear"/>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     <HomeCard title="Jammiest Deal of the Day">
-                        {/* Content for card 1 */}
+                        {<DealContainer />}
                     </HomeCard>
                     <HomeCard title="Jamazon Essentials">
                         {<ImageContainer />}
@@ -21,5 +22,5 @@ export default function QuadContainer(){
                     </HomeCard>
             </div>
         </div>
-    )
+    );
 }
