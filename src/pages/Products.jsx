@@ -1,11 +1,12 @@
 import React from "react";
+import GridExample from "../components/GridExample";
 
 function Products(){
     return(
-        <div>
-            <h1>hewwo products</h1>
-        </div>
-    );
+        <GridExample/>
+        
+    )
 }
+
 
 export default Products;
