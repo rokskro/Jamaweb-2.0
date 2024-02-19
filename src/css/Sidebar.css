@@ -1,0 +1,9 @@
+.badge-outline-status {
+    color: #09d349;
+    border: 1px solid #09d349;
+}
+
+.badge-outline-secondary {
+    color: #8a8a8a;
+    border: 1px solid #8a8a8a;
+}
