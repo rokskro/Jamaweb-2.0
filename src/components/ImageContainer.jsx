@@ -1,19 +1,24 @@
 import React from 'react';
+import FishImage from '/fish-image.png';
+import NexusImage from '/nexus-image.png';
+import SenorImage from '/senor-image.png';
+import JoffeeImage from '/joffee-image.png';
+
 
 export default function ImageContainer(){
     return(
         <div className="container">
         <div className="image">
-          <img src="fish-image.png" />
+          <img src={FishImage}/>
         </div>
         <div className="image">
-          <img src="senor-image.png" />
+          <img src={NexusImage} />
         </div>
         <div className="image">
-          <img src="joffee-image.png" />
+          <img src={SenorImage}/>
         </div>
         <div className="image">
-          <img src="nexus-image.png" />
+          <img src={JoffeeImage} />
         </div>
       </div>
     );
