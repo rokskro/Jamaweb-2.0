@@ -1,4 +1,3 @@
-import React from 'react';
 import JamImage from '/jam-image.png';
 
 export default function DealContainer(){

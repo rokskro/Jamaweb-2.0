@@ -1,4 +1,3 @@
-import React from 'react';
 import FishImage from '/fish-image.png';
 import NexusImage from '/nexus-image.png';
 import SenorImage from '/senor-image.png';
