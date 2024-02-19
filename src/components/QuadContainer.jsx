@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/QuadContainer.css';
 import HomeCard from './HomeCard';
 import ImageContainer from '../components/ImageContainer';
-
+import DealContainer from '../components/DealContainer';
 export default function QuadContainer(){
     return(
         <div className="container">
