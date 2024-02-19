@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeCard from './HomeCard';
+import ImageContainer from '../components/ImageContainer';
 
 export default function QuadContainer(){
     return(
@@ -11,7 +12,7 @@ export default function QuadContainer(){
                         {/* Content for card 1 */}
                     </HomeCard>
                     <HomeCard title="Jamazon Essentials">
-                        {/* Content for card 2 */}
+                        {ImageContainer}
                     </HomeCard>
                     <HomeCard title="Sign in for the best experience">
                         {/* Content for card 3 */}
