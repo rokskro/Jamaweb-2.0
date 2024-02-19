@@ -1,0 +1,23 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.HomeCard {
+    flex: 1 0 20%;
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.3s;
+    border-radius: 5px; 
+}
+
+.HomeCard:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
