@@ -1,12 +1,14 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+import Banner from '../components/Banner';
+import QuadContainer from "../components/QuadContainer";
 
 function MainPage(){
     return(
-        <div class="card">
-            <h1>Main page text</h1>
-
-            <button class="btn btn-dark">hewwo</button>
-            <img src="/cat.gif"></img>
+        <div>
+            <Banner />
+            <QuadContainer />
+            
             
         </div>
     );
