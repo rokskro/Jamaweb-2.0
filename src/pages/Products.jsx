@@ -3,7 +3,8 @@ import GridExample from "../components/GridExample";
 
 function Products(){
     return(
-        <GridExample/>
+        <GridExample/>,
+        <p> Hello</p>
         
     )
 }
