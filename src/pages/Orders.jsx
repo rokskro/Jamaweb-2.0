@@ -5,7 +5,7 @@ function Orders(){
         <div>
             <h1>hewwo orders!</h1>
         </div>
-    );
+    )
 }
 
 export default Orders;

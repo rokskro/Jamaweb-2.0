@@ -26,3 +26,22 @@
 .img-width-370px {
     width: 370px;
 }
+
+hr.clear {
+    margin-top: 20px;
+    border: none;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #f14c23, orange);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 5s linear infinite;
+} 
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}

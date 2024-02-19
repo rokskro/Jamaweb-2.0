@@ -2,6 +2,7 @@ import '../css/QuadContainer.css';
 import HomeCard from './HomeCard';
 import ImageContainer from '../components/ImageContainer';
 import JammieBox from '../components/JammieBox';
+import CatImage from '/cat.png';
 
 export default function QuadContainer(){
     return(
@@ -15,9 +16,11 @@ export default function QuadContainer(){
                         {<ImageContainer />}
                     </HomeCard>
                     <HomeCard title="Sign in for the best experience">
-                        <p className="font-size-13px">Enjoy the best Jamazon has to offer by tracking your orders, saving your basket and getting shopping reccomendations from FunkAI</p>
+                        <img src={CatImage} />
                         <button className="btn amazonButton" type="submit">Login</button>
-                        <p className="card-text font-size-small">Dont have an account? Go register here</p>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <p className="card-text font-size-small" style={{ margin: '0' }}>Dont have an account? <span className="gradient-text">Go register here</span></p>
+                        </div>
                     </HomeCard>
             </div>
         </div>
