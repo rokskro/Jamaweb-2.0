@@ -1,23 +1,24 @@
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; 
-}
-
 .HomeCard {
-    flex: 1 0 20%;
-    box-shadow: 0 4px 8px 0 #00000033;
-    transition: 0.3s;
-    border-radius: 5px; 
+    padding: 10px; /* Adjust as needed */
+    margin: 5px; /* Adjust as needed */
+
 }
 
-.HomeCard:hover {
-    box-shadow: 0 8px 16px 0 #00000033;
+.btn.amazonButton {
+    background-color: #ff9900;
+    border: 1px solid #0c0c0c;
+}
+  
+
+.btn.amazonButton:hover {
+    background-color: orange;
+    border: 1px solid #0c0c0c;
 }
 
+.font-size-13px {
+    font-size: 13px;
+}
+
+.font-size-small {
+    font-size: small;
+}

@@ -15,10 +15,9 @@ export default function QuadContainer(){
                         {<ImageContainer />}
                     </HomeCard>
                     <HomeCard title="Sign in for the best experience">
-                        {/* Content for card 3 */}
-                    </HomeCard>
-                    <HomeCard title="Card title">
-                        {/* Content for card 4 */}
+                        <p className="font-size-13px">Enjoy the best Jamazon has to offer by tracking your orders, saving your basket and getting shopping reccomendations from FunkAI</p>
+                        <button className="btn amazonButton" type="submit">Login</button>
+                        <p className="card-text font-size-small">Dont have an account? Go register here</p>
                     </HomeCard>
             </div>
         </div>

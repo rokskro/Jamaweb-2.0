@@ -7,7 +7,7 @@ export default function HomeCard({title,children}){
     return(
         <div className="card">
             <div className='card-body'>
-                <hs className="card-title">{title}</hs>
+                <h5 className="card-title">{title}</h5>
                 {children}
 
 
