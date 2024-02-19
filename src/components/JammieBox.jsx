@@ -1,6 +1,6 @@
 import JamImage from '/jam-image.png';
 
-export default function DealContainer(){
+export default function JammieBox(){
     return( 
         <div>
             <h5 className="card-title">Jammiest Deal of the Day</h5>
