@@ -1,0 +1,14 @@
+.badge-outline-complete {
+    color: #00c689;
+    border: 1px solid #00c689;
+}
+
+.badge-outline-transit {
+    color: #9565fe;
+    border: 1px solid #9565fe;
+}
+
+.badge-outline-confirm {
+    color: #2aabfb;
+    border: 1px solid #2aabfb;
+}
