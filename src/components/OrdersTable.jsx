@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import '../css/OrdersTable.css';
+import React, { useEffect, useState } from 'react';
 import JsonData from '../json/dataTable.json';
 
 export default function OrdersTable(){
@@ -14,26 +14,48 @@ export default function OrdersTable(){
         setIncompleteOrdersCount(count);
     }, []);
 
+    const badgeClass = (status) => {
+        switch(status) {
+            case 'Confirmed':
+                return 'badge-pill badge-outline-confirm';
+            case 'In Transit':
+                return 'badge-pill badge-outline-transit';
+            case 'Complete':
+                return 'badge-pill badge-outline-complete';
+            default:
+                return '';
+        }
+    };
+    
     const DisplayTableData = JsonData && JsonData.flatMap((info) => {
         return info.products && info.products.map((product, index) => (
-            <tr key={`\${info.orderId}-\${index}`}>
-                <td>{index === 0 ? info.orderId : ''}</td>
-                <td>{product.productName}</td>
-                <td>{product.productId}</td>
-                <td>{info.customerId}</td>
-                <td>{info.customerName}</td>
-                <td>{info.status}</td>
-                <td>
-                    <button type="button" className="btn-jamazon">
-                        Cancel
-                    </button>
-                    <button type="button" className="btn-dark">
-                        Edit
-                    </button>
-                </td>
-            </tr>
+          <tr key={`${info.orderId}-${index}`}>
+            <td>{index === 0 ? info.orderId : ''}</td>
+            <td>{product.productName}</td>
+            <td>{product.productId}</td>
+            <td>{index === 0 ? info.customerId : ''}</td>
+            <td>{index === 0 ? info.customerName : ''}</td>
+            <td>
+              <p style={{fontSize: '17px'}}>
+
+                <span className={`${badgeClass(info.status)}`}>
+                  {info.status}
+                </span>
+              </p>
+            </td>
+            <td>
+              <button type="button" className="btn-jamazon">
+                Cancel
+              </button>
+              <button type="button" className="btn-dark">
+                Edit
+              </button>
+            </td>
+          </tr>
         ));
-    });
+      });
+
+
 
     return(
         <div id="content">

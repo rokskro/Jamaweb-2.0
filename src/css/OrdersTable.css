@@ -1,14 +1,26 @@
 .badge-outline-complete {
     color: #00c689;
-    border: 1px solid #00c689;
+    border: 2px solid #00c689;
+    border-radius: 6px;
+    padding: 1px;
+    font-size:smaller;
+    font-weight: bold;
 }
 
 .badge-outline-transit {
     color: #9565fe;
-    border: 1px solid #9565fe;
+    border-radius: 6px;
+    padding: 1px;
+    font-size:smaller;
+    font-weight: bold;
+    border: 2px solid #9565fe
 }
 
 .badge-outline-confirm {
     color: #2aabfb;
-    border: 1px solid #2aabfb;
+    border: 2px solid #2aabfb;
+    border-radius: 6px;
+    padding: 1px;
+    font-size:smaller;
+    font-weight: bold;
 }
